@@ -19,13 +19,12 @@
     <script src="https://kit.fontawesome.com/7279f114a5.js" crossorigin="anonymous"></script>
     <!--Progress Bar-->
     <script src="./progressbar.min.js"></script>
-    <!--Parallax-->
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <!--Scripts-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <!--Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <title>NdR Viagens</title>
 </head>
 <body>
@@ -42,8 +41,8 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" id="home-menu">Home</a>
-                        <a class="nav-item nav-link" id="destino-menu">Destinos</a>
                         <a class="nav-item nav-link" id="promocao-menu">Promoções</a>
+                        <a class="nav-item nav-link" id="destino-menu">Destinos</a>
                         <a class="nav-item nav-link" id="contato-menu">Contato</a>
                     </div>
                 </div>
@@ -93,28 +92,54 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div id="about-area">
+            <!--Promoções-->
+            <div id="promocao-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h3 class="main-title">Destinos</h3>
+                            <h3 class="main-title">Promoções</h3>
                         </div>
                         <div class="col-md-6">
                             <img class="img-fluid" src="./imagens/hobbiton.jpg" alt="Hobbiton">
                         </div>
                         <div class="col-md-6">
-                            <h3 class="about-title">Hobbiton</h3>
+                            <h3 class="promocao-title">Hobbiton</h3>
                             <p>Um das principais características da Nova Zelândia é a sua rica natureza,</p>
                             <p>repleta de paisagens de tirar o fôlego, mas país também é conhecido por ter sido cenário para as gravações dos filmes</p>
                             <p>O Senhor dos Anéis e O Hobbit</p>
                             <p>Imagine conhecer de perto o set de filmagem destes sucessos do cinema?</p>
                             <p>Imagine poder visitar Hobbiton, o Condado dos Hobbits?</p>
-                            <ul id="about-list">
+                            <ul id="promocao-list">
                                 <li><i class="fas fa-circle"></i>Endereço: 501 Buckland Rd, Matamata</li>
                                 <li><i class="fas fa-circle"></i>Funcionamento: Das 9h às 17h</li>
                                 <li><i class="fas fa-circle"></i>Custo: Tours a partir de NZ$ 84</li>
                                 <li><i class="fas fa-circle"></i>Site: http://www.hobbitontours.com</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Satisfação-->
+            <div id="satisfacao-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Avaliação dos clientes</h3>
+                        </div>
+                        <div class="col-md-4 circle-box">
+                            <div id="circleA"></div>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="col-md-4 circle-box">
+                            <div id="circleB"></div>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="col-md-4 circle-box">
+                            <div id="circleC"></div>
+                            <i class="fa fa-star"></i>
                         </div>
                     </div>
                 </div>

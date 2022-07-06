@@ -71,6 +71,12 @@ header, .navbar{
     font-weight: 300;
     margin-bottom: 100px;
     color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke: #000;
+}
+
+.carousel-item img{
+    filter: brightness(50%);
 }
 
 .main-btn{
@@ -99,7 +105,7 @@ header, .navbar{
 
 /* Destinos */
 
-#about-area{
+#promocao-area{
     background-color: #f9f9f9;
 }
 
@@ -119,23 +125,76 @@ header, .navbar{
     left: 42.5%;
 }
 
-.about-title{
+.promocao-title{
     font-size: 17px;
     color: #444;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-#about-list{
+#promocao-list{
     list-style: none;
     padding-left: 0;
 }
 
-#about-list li{
+#promocao-list li{
     line-height: 30px;
 }
 
-#about-list i{
+#promocao-list i{
     color: #65daf9;
     margin-right: 15px;
+}
+
+/* Destinos */
+
+.destinos-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.destinos-box i, .destinos-box h4{
+    transition: .5s;
+}
+
+.destinos-box i{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.destinos-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.destinos-box:hover > i, .destinos-box:hover > h4{
+    color: #65daf9;
+}
+
+/* Satisfação */
+
+.circle-box div{
+    padding: 0 40px;
+}
+
+.progressbar-text{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#satisfacao-area{
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#satisfacao-area .main-title{
+    color: #fff;
+    
+}
+
+#satisfacao-area .main-title::after{
+    border-top: 2px solid #fff;
 }
