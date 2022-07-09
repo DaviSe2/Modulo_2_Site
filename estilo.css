@@ -1,10 +1,11 @@
 /* Gerais */
 body{
     font-family:'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .row{
-    margin: 0;
+    margin: 10;
 }
 
 .container{
@@ -13,12 +14,28 @@ body{
 
 p, li{
     color: #444;
-    font-size: 14px;
+    font-size: 14px
+}
+
+.main-title{
+    color: #444;
+    margin: 0 0 60px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title::after{
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    display: block;
+    margin-top: 10px;
+    margin-left: 42.5%;
 }
 
 /* Barra de navegação */
 header, .navbar{
-    background-color: #353d41;
+    background-image: url(./imagens/fundoNav.jpg);
 }
 
 #nav-container{
@@ -75,13 +92,13 @@ header, .navbar{
     -webkit-text-stroke: #000;
 }
 
-.carousel-item img{
+#mainSlider img{
     filter: brightness(50%);
 }
 
 .main-btn{
     text-decoration: none;
-    background-color: #65daf9;
+    background-color: #852E7C;
     color: #fff;
     text-transform: uppercase;
     width: 200px;
@@ -96,33 +113,17 @@ header, .navbar{
    text-decoration: none;
    color: #fff;
    background-color: transparent;
-   border-color: #65daf9; 
+   border-color: #852E7C; 
 }
 
 .carousel-indicators .active{
-    background-color: #65daf9;
+    background-color: #852E7C;
 }
 
-/* Destinos */
+/* Promoções */
 
 #promocao-area{
     background-color: #f9f9f9;
-}
-
-.main-title{
-    color: #444;
-    margin: 0 0 65px 0;
-    font-size: 40px;
-    text-align: center;
-}
-
-.main-title::after{
-    content: "";
-    border-top: 2px solid #333;
-    width: 15%;
-    position: absolute;
-    top: 60px;
-    left: 42.5%;
 }
 
 .promocao-title{
@@ -130,6 +131,7 @@ header, .navbar{
     color: #444;
     text-transform: uppercase;
     font-weight: bold;
+    
 }
 
 #promocao-list{
@@ -142,34 +144,50 @@ header, .navbar{
 }
 
 #promocao-list i{
-    color: #65daf9;
+    color: #852E7C;
     margin-right: 15px;
 }
 
-/* Destinos */
-
-.destinos-box{
+#select-btn-box{
     text-align: center;
-    margin-bottom: 50px;
 }
 
-.destinos-box i, .destinos-box h4{
-    transition: .5s;
-}
-
-.destinos-box i{
-    font-size: 36px;
-    margin-bottom: 20px;
+.select-btn{
     color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-bottom: 1%;
 }
 
-.destinos-box h4{
-    font-size: 24px;
-    margin-bottom: 20px;
+.select-btn.active , .select-btn:hover{
+    color: #FFF;
+    border-color: #852E7C;
+    background-color: #852E7C;    
 }
 
-.destinos-box:hover > i, .destinos-box:hover > h4{
-    color: #65daf9;
+#promoSlider{
+    margin-top: 1%;
+    height: 100%;
+}
+
+#promoSlider p, #promoSlider li{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#promoSlider i{
+    font-size: 20px;
+    text-align: center;
+}
+
+#promoSlider span{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Satisfação */
@@ -197,4 +215,463 @@ header, .navbar{
 
 #satisfacao-area .main-title::after{
     border-top: 2px solid #fff;
+}
+
+/* Destinos */
+
+.card-body{
+    text-align: center;
+}
+
+.card{
+    height: 90%;
+    margin-bottom: 10%;
+}
+
+/* Roteiros */
+
+#roteiros-area{
+    height: 500px;
+}
+
+#roteiros-area .container-fluid, #roteiros-area .row{
+    height: 100%;
+}
+
+#roteiros-area .roteiros-box{
+    text-align: center;
+    padding: 70px 50px;
+}
+
+#roteiros-img{
+    background-image: url(./imagens/fundoRoteiros.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+}
+
+#padrao-img{
+    height: 100%;
+    width: 50%;
+}
+
+#padrao-img h4, #padrao-img p{
+    color: #fff;
+}
+
+#padrao-img h4{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#padrao-img p{
+    margin-bottom: 10px;
+    font-size: 100%;
+}
+
+#roteiros-btn{
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #FFF;
+}
+
+#roteiros-btn:hover{
+    border-color: #852E7C;
+    background-color: #852E7C;
+}
+
+/* Galeria */
+
+.project-box{
+    margin-bottom: 30px;
+}
+
+#galeria-area #select-btn-box{
+    height: auto;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.select-btn.active , .select-btn:hover{
+    color: #FFF;
+    border-color: #852E7C;
+    background-color: #852E7C;    
+}
+
+#galeria-area .select-btn{
+    text-transform: none;
+    margin: 0 0px 1%;
+}
+
+/* Novidade */
+
+#novidades-area{
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#novidades area p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+#email-input{
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #852E7C;
+    display: inline;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40px;
+}
+
+#novidades-btn{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 1px solid #852E7C;
+    background-color: #852E7C;
+    text-transform: uppercase;
+    color: #fff;
+    height: 40px;
+    padding: 0 30px;
+    margin-left: -145px;
+    position: absolute;
+    transition: .5s;
+}
+
+#novidades-btn:hover{
+    background-color: #fff;
+    color: #852E7C;
+}
+
+/* Footer */
+
+#contato-area{
+    text-align: center;
+}
+
+.contato-box{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #5F2C91;
+}
+
+.contato-box i{
+    color: #444;
+    border: solid 1px #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contato-box p{
+    font-size: 16px;
+}
+
+.contato-title{
+    font-weight: bold;
+    color: #5F2C91;
+}
+
+#msg-box p{
+    font-size: 22px;
+}
+
+#contato-form input[type="text"], #contato-form input[type="email"], #contato-form textarea{
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+#contato-form textarea{
+    resize: none;
+}
+
+#contato-form .main-btn{
+    width: 120px;
+    height: 50px;
+}
+
+#contato-form .main-btn:hover{
+    color: #5F2C91;
+}
+
+/* Copy */
+
+#copy-area{
+    background-color: #f1f1f1;
+}
+
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p{
+    margin-bottom: 0;
+}
+
+#copy-area .container a{
+    font-weight: bold;
+    color: #444;
+}
+
+#copy-area .container a:hover{
+    text-decoration: none;
+    color: #5F2C91;
+}
+
+/* Responsivo */
+
+@media(max-width: 768px){
+
+    /* Geral */
+    .container{
+        padding: 20px 0;
+    }
+
+    /* Navbar */
+    #nav-container .nav-item{
+        text-align: center;
+    }
+    /* Slider */
+    #mainSlider .carousel-innner, #mainSlider .carousel-item, #mainSlider img{
+        height: 500px;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size: 30px;
+    }
+
+    #mainSlider .carousel-caption p{
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+
+    .carousel-caption{
+        left: 10%;
+        right: 10%;
+    }
+
+    #mainSlider a{
+        height: 570px;
+    }
+
+    /* Satisfação */
+    .circle-box{
+        width: 33.3%;        
+    }
+
+    .progressbar-text{
+        font-size: 70%;
+    }
+
+    .circle-box div{
+        padding: 0 20px;
+    }
+
+    #satisfacao-area h3{
+        margin-top: 15px;
+
+    }
+
+    #satisfacao-area h3::after{
+        margin-top: 15px;
+    }
+
+    #satisfacao-area i{
+        font-size: 22px;
+    }
+
+    /* Destinos */
+
+    .card-title{
+        font-size: 14px
+    }
+
+    .card-text{
+        font-size: 12px
+    }
+
+    /* Roteiros */
+
+    #roteiros-area{
+        height: 400px;
+    }
+
+    #roteiros-area .roteiros-box{
+        padding: 50px 25px;
+    }
+
+    #roteiros-area p{
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    /* novidades */
+    #novidades-area p{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #email-input{
+        width: 70%;
+    }
+
+    /* footer */
+
+    #contato-area p{
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media(max-width: 430px){
+
+    /* Gerais */
+    .main-title{
+        margin-top: 10px;
+    }
+
+    /* Navbar */
+    #logo{
+        width: 170px;
+        height: auto;
+    }
+
+    /* Slider */
+    #mainSlider .carousel-innner, #mainSlider .carousel-item, #mainSlider img{
+        height: 220px;
+    }
+
+    #mainSlider{
+        margin-top: 90px;
+    }
+
+    #mainSlider .carousel-caption{
+        top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p{
+        display: none;
+    }
+
+    #mainSlider a{
+        height: 220px;
+    }
+
+    .carousel-caption .main-btn{
+        font-size: 14px;
+    }
+
+    /* Promoções */
+    .main-title{
+        font-size: 30px;
+    }
+
+    #promocao-area img{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /* Satisfação */
+    .circle-box{
+        width: 33.3%;        
+    }
+    
+    .progressbar-text{
+        font-size: 18px;
+    }
+
+    #satisfacao-area i{
+        font-size: 22px;
+    }
+
+    /* Destinos */
+    #destinos-area .col-md-4{
+        width: 33%;
+        margin-bottom: 30px;
+    }
+
+    #destinos-area .col-md-4 .card{
+        height: 130px;
+    }
+    
+    #destinos-area .col-md-4 h5{
+
+        font-size: 9.7px;
+    }
+
+    #destinos-area .col-md-4 p{
+        display: none;
+    }
+
+    /* Roteiros */
+    #roteiros-area{
+        height: auto;
+    }
+    #roteiros-area #roteiros-img{
+        display: none;
+    }
+
+    #roteiros-area #padrao-img{
+        width: 100%;
+    }
+
+    #roteiros-area h4{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+
+    #roteiros-area a{
+        margin-top: 40px;
+    }
+
+    #roteiros-area p{
+        margin-bottom: 30px;
+    }
+
+    /* Filtro */
+    #galeria-area .select-btn{
+        margin-bottom: 20px;
+    }
+
+    .project-box{
+        width: 33.3%;
+    }
+
+    /* Novidades */
+    #novidades-area p{
+        font-size: 16px;
+    }
+
+    #email-input{
+        width: 80%;
+    }
+
+    /* Contato */
+    .contato-box{
+        border: none;
+        margin-bottom: 0;
+    }
 }
